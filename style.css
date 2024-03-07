@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/stars.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+.MainSolorSystemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.Neptune{
+    width: 820px;
+    height: 820px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.UranusClass{
+    width: 750px;
+    height: 750px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 50%;
+}
+.SaturnClass{
+    width: 670px;
+    height: 670px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 50%;
+}
+.JupiterClass{
+    width: 600px;
+    height: 600px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50%;
+}
+.MarsClass{
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50%;
+}
+.EarthClass{
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 60px;
+    border-radius: 50%;
+}
+.VenusClass{
+    width: 280px;
+    height: 280px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 60px;
+    border-radius: 50%;
+}
+.classOfMercury{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50%;
+}
+.sunImage{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: 50px;
+    height: 50px;
+    background-color:rgb(187, 69, 0) ;
+    border-radius: 50%;
+background: #f0dddd;
+box-shadow: inset 50px 50px 100px #fff3f3,
+            inset -50px -50px 100px #f7f7f7;
+}
