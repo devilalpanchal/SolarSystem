@@ -6,23 +6,25 @@
 
 body {
     background-image: url('./images/stars.png');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    height: 100%;
+    /* background-position: 100%; */
+    /* height: 100%; */
+    /* background-clip: border-box; */
 
 }
 
 .MainSolorSystemContainer {
     position: absolute;
-    top: 22%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
 
 .mercury {
-    width: 15px;
-    height: 15px;
-    background-color: rgb(171, 158, 163);
+    width: 20px;
+    height: 20px;
+    background-color: #9e724a;
     top: 135px;
     left: 11%;
     border-radius: 50%;
@@ -32,10 +34,10 @@ body {
 .mercuryClass {
     content: "";
     position: absolute;
-    /* border: solid 2px rgb(171, 158, 163); */
+    /* border: solid 4px #370491; */
     width: 170px;
     height: 170px;
-    top: 198px;
+    top: 210px;
     left: -16px;
     border-radius: 50%;
     animation-iteration-count: infinite;
@@ -47,8 +49,8 @@ body {
 .venus {
     width: 18px;
     height: 18px;
-    background-color: rgb(254, 152, 0);
-    top: 155px;
+    background-color: #5d3019;
+    top: 200px;
     left: 192px;
     border-radius: 50%;
     position: relative;
@@ -57,10 +59,10 @@ body {
 .venusClass {
     content: "";
     position: absolute;
-    /* border: solid 1px rgb(254, 152, 0); */
-    width: 220px;
+    /* border: solid 1px #370491; */
+    width: 280px;
     height: 220px;
-    top: 172px;
+    top: 165px;
     left: -40px;
     border-radius: 50%;
     animation-iteration-count: infinite;
@@ -70,22 +72,27 @@ body {
 }
 
 .Earth {
-    width: 20px;
-    height: 20px;
-    background-color: #2eee5e;
+
+    width: 25px;
+    height: 25px;
+    /* background-color:  rgba(0,142,247,255); */
+    background-color:rgb(34, 228, 34);
     top: -10px;
     left: 124px;
     border-radius: 50%;
     position: relative;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .EarthClass {
     content: "";
     position: absolute;
-    width: 280px;
+    width: 350px;
     height: 280px;
     /* border: solid 5px rgba(73, 72, 72, 0.185); */
-    top: 140px;
+    /* border: solid 5px rgba(248, 29, 29, 0.185); */
+    top: 165px;
     left: -71px;
     border-radius: 50%;
     animation-iteration-count: infinite;
@@ -97,7 +104,7 @@ body {
 .mars {
     width: 22px;
     height: 22px;
-    background-color: rgb(201, 4, 0);
+    background-color: #e46c3d;
     top: 75px;
     left: 12px;
     border-radius: 50%;
@@ -107,10 +114,10 @@ body {
 .marsClass {
     content: "";
     position: absolute;
-    width: 350px;
-    height: 350px;
-    /* border: solid 1px rgb(201, 4, 0); */
-    top: 108px;
+    width: 300px;
+    height: 200px;
+    /* border: solid 3px #370491; */
+    top: 180px;
     left: -105px;
     border-radius: 50%;
     animation-iteration-count: infinite;
@@ -124,7 +131,7 @@ body {
 .Jupiter {
     width: 22px;
     height: 22px;
-    background-color: rgb(201, 4, 0);
+    background-color: #e9be81;
     top: 86px;
     left: 12px;
     border-radius: 50%;
@@ -135,9 +142,9 @@ body {
     content: "";
     position: absolute;
     width: 400px;
-    height: 400px;
-    /* border: solid 1px rgb(201, 4, 0); */
-    top: 80px;
+    height: 300px;
+    /* border: solid 1px #370491; */
+    top: 100px;
     left: -130px;
     border-radius: 50%;
     animation-iteration-count: infinite;
@@ -148,7 +155,7 @@ body {
 .Saturn {
     width: 22px;
     height: 22px;
-    background-color: rgb(214, 209, 208);
+    background-color: #f7db67;
     top: 110px;
     left: 12px;
     border-radius: 50%;
@@ -158,10 +165,10 @@ body {
 .SaturnClass {
     content: "";
     position: absolute;
-    width: 450px;
-    height: 450px;
-    /* border: solid 1px rgb(201, 4, 0); */
-    top: 55px;
+    width: 400px;
+    height: 300px;
+    /* border: solid 1px #370491; */
+    top: 70px;
     left: -155px;
     border-radius: 50%;
     animation-iteration-count: infinite;
@@ -172,7 +179,7 @@ body {
 .Uranus {
     width: 28px;
     height: 22px;
-    background-color: rgb(98, 159, 216);
+    background-color: #0d739a;
     top: 125px;
     left: 12px;
     border-radius: 50%;
@@ -183,10 +190,10 @@ body {
     content: "";
     position: absolute;
     width: 500px;
-    height: 500px;
-    /* border: solid 1px rgb(201, 4, 0); */
-    top: 30px;
-    left: -180px;
+    height: 300px;
+    /* border: solid 1px #370491; */
+    top: 50px;
+    left: -170px;
     border-radius: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -196,7 +203,7 @@ body {
 .Neptune {
     width: 40px;
     height: 35px;
-    background-color: rgb(197, 18, 108);
+    background-color: #446bf7;
     top: 145px;
     left: 12px;
     border-radius: 50%;
@@ -206,16 +213,16 @@ body {
 .NeptuneClass {
     content: "";
     position: absolute;
-    width: 550px;
-    height: 550px;
-    /* border: solid 1px rgb(201, 4, 0); */
+    width: 700px;
+    height: 500px;
+    /* border: solid 1px #1a0342; */
     top: 8px;
     left: -205px;
     border-radius: 50%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: orbit;
-    animation-duration: 1s;
+    animation-duration: 12s;
 }
 
 
@@ -232,38 +239,21 @@ body {
 }
 
 
-/* .sunImage {
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    width: 50px;
-    height: 50px;
-    background-color: rgb(187, 69, 0);
-    border-radius: 50%;
-    background: #f0dddd;
-    box-shadow: inset 50px 50px 100px #fff3f3,
-        inset -50px -50px 100px #f7f7f7;
-    position: absolute;
-    right: 610px;
-    top: 310px;
-    z-index: -1;
-    padding: 10px;
-} */
-
 #sun {
     position: absolute;
-    margin-top: 250px;
+    margin-top: 170px;
    
 }
 
 .sun {
     width: 70px;
     height: 70px;
-    background-color: yellow;
+    background-color: rgb(221, 221, 21);
     border-radius: 50%;
-    /* background: #f0dddd; */
-    box-shadow: inset 50px 50px 100px #fff3f3,
-        inset -50px -50px 100px #f7f7f7;
-    top: 90%;
+    background: #ec0909;
+    box-shadow: inset 50px 50px 100px #dff708,
+        inset -50px -50px 100px #f1ee1b;
+    top:90px;
     left: 50%;
     position: relative;
     filter: blur(8px);
@@ -275,11 +265,13 @@ body {
     width: 150px;
     padding: 10px;
     position: absolute;
-    background: white;
-    left: 50px;
+    /* background: white; */
+    left: 60px;
     top: 150px;
     border-radius: 20px;
-    border: 10px solid rgb(214, 207, 209);
+    box-shadow: inset 50px 50px 100px #fff3f3;
+
+    border: 10px solid rgb(219, 248, 220);
 }
 .NameOfOrbitors >div{
     padding: 10px;
@@ -299,6 +291,12 @@ body {
     font-size: 20px;
     text-align: end;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
+    right: 20px;
+}
+
+.asideImage{
+    position: absolute;
     right: 0;
+    z-index: -1;
 }
