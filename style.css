@@ -8,128 +8,217 @@ body {
     background-image: url('./images/stars.png');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+
 }
 
 .MainSolorSystemContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.Neptune {
-    width: 820px;
-    height: 820px;
-    border: 2px solid white;
-    text-align: center;
-    padding: 30px;
-    border-radius: 50%;
-}
-
-.UranusClass {
-    width: 750px;
-    height: 750px;
-    border: 2px solid white;
-    text-align: center;
-    padding: 40px;
-    border-radius: 50%;
-}
-
-.SaturnClass {
-    width: 670px;
-    height: 670px;
-    border: 2px solid white;
-    text-align: center;
-    padding: 30px;
-    border-radius: 50%;
-}
-
-.JupiterClass {
-    width: 600px;
-    height: 600px;
-    border: 2px solid white;
-    text-align: center;
-    padding: 50px;
-    border-radius: 50%;
-}
-
-.MarsClass {
-    width: 500px;
-    height: 500px;
-    border: 2px solid white;
-    text-align: center;
-    padding: 50px;
-    border-radius: 50%;
-}
-
-.EarthClass {
-    width: 400px;
-    height: 400px;
-    border: 2px solid white;
-    text-align: center;
-    padding: 60px;
-    border-radius: 50%;
-    animation: orbit 10s linear infinite;
-
-}
-
-.VenusClass {
-    width: 280px;
-    height: 280px;
-    border: 2px solid white;
-    text-align: center;
-    padding: 60px;
-    border-radius: 50%;
-    animation: orbit 10s linear infinite;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function: linear;
-}
-/* .venus {
-    color: white;
     position: absolute;
-    padding: 10px;
-    height: 15%;
-    width: 15%;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    background: rgb(148, 86, 86);
-    background: #f0dddd;
-    box-shadow: inset 50px 50px 100px #ff1919,
-        inset -50px -50px 100px #e22626;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-} */
-
-.classOfMercury {
-    width: 100%;
-    height: 100%;
-    /* border: 2px solid white; */
-    text-align: center;
-    border-radius: 50%;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function: linear;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .mercury {
-    color: white;
-    position: absolute;
-    padding: 10px;
-    z-index: 100;
-    height: 15%;
-    width: 15%;
-    border: 1px solid rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;
+    background-color: rgb(171, 158, 163);
+    top: 135px;
+    left: 11%;
     border-radius: 50%;
-    background: rgb(127, 148, 86);
-    background: #f0dddd;
-    box-shadow: inset 50px 50px 100px #a1b7c5,
-        inset -50px -50px 100px #c0e226;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    position: relative;
 }
+
+.mercuryClass {
+    content: "";
+    position: absolute;
+    /* border: solid 2px rgb(171, 158, 163); */
+    width: 170px;
+    height: 170px;
+    top: 198px;
+    left: -16px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 15s;
+}
+
+.venus {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(254, 152, 0);
+    top: 155px;
+    left: 192px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.venusClass {
+    content: "";
+    position: absolute;
+    /* border: solid 1px rgb(254, 152, 0); */
+    width: 220px;
+    height: 220px;
+    top: 172px;
+    left: -40px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 10s;
+}
+
+.Earth {
+    width: 20px;
+    height: 20px;
+    background-color: #2eee5e;
+    top: -10px;
+    left: 124px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.EarthClass {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    /* border: solid 5px rgba(73, 72, 72, 0.185); */
+    top: 140px;
+    left: -71px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 18s;
+}
+
+.mars {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(201, 4, 0);
+    top: 75px;
+    left: 12px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.marsClass {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    /* border: solid 1px rgb(201, 4, 0); */
+    top: 108px;
+    left: -105px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    /* animation-duration: 14s; */
+    animation-duration: 40s;
+}
+
+
+.Jupiter {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(201, 4, 0);
+    top: 86px;
+    left: 12px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.JupiterClass {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    /* border: solid 1px rgb(201, 4, 0); */
+    top: 80px;
+    left: -130px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 14s;
+}
+.Saturn {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(214, 209, 208);
+    top: 110px;
+    left: 12px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.SaturnClass {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    /* border: solid 1px rgb(201, 4, 0); */
+    top: 55px;
+    left: -155px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 50s;
+}
+.Uranus {
+    width: 28px;
+    height: 22px;
+    background-color: rgb(98, 159, 216);
+    top: 125px;
+    left: 12px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.UranusClass {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    /* border: solid 1px rgb(201, 4, 0); */
+    top: 30px;
+    left: -180px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 15s;
+}
+.Neptune {
+    width: 40px;
+    height: 35px;
+    background-color: rgb(197, 18, 108);
+    top: 145px;
+    left: 12px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.NeptuneClass {
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    /* border: solid 1px rgb(201, 4, 0); */
+    top: 8px;
+    left: -205px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 1s;
+}
+
+
 
 
 @keyframes orbit {
@@ -143,8 +232,7 @@ body {
 }
 
 
-.sunImage {
-    /* display: none; */
+/* .sunImage {
     filter: blur(8px);
     -webkit-filter: blur(8px);
     width: 50px;
@@ -155,7 +243,62 @@ body {
     box-shadow: inset 50px 50px 100px #fff3f3,
         inset -50px -50px 100px #f7f7f7;
     position: absolute;
-    right: 648px;
-    top: 407px;
+    right: 610px;
+    top: 310px;
     z-index: -1;
+    padding: 10px;
+} */
+
+#sun {
+    position: absolute;
+    margin-top: 250px;
+   
+}
+
+.sun {
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+    /* background: #f0dddd; */
+    box-shadow: inset 50px 50px 100px #fff3f3,
+        inset -50px -50px 100px #f7f7f7;
+    top: 90%;
+    left: 50%;
+    position: relative;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.NameOfOrbitors{
+    text-align: center;
+    height: 400px;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    background: white;
+    left: 50px;
+    top: 150px;
+    border-radius: 20px;
+    border: 10px solid rgb(214, 207, 209);
+}
+.NameOfOrbitors >div{
+    padding: 10px;
+}
+.nameofProject{
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    color: rgb(105, 224, 115);
+    left: 50px;
+    box-shadow: inset 50px 50px 100px #fff3f3;
+}
+.name {
+    color: rgb(238, 228, 92);
+    font-size: 20px;
+    text-align: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
