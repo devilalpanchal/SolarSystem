@@ -261,7 +261,7 @@ body {
 }
 .NameOfOrbitors{
     text-align: center;
-    height: 400px;
+    height: 450px;
     width: 150px;
     padding: 10px;
     position: absolute;
@@ -271,7 +271,7 @@ body {
     border-radius: 20px;
     box-shadow: inset 50px 50px 100px #fff3f3;
 
-    border: 10px solid rgb(219, 248, 220);
+    border: 10px solid rgb(214, 207, 209);
 }
 .NameOfOrbitors >div{
     padding: 10px;
@@ -300,3 +300,28 @@ body {
     right: 0;
     z-index: -1;
 }
+#mone{
+    /* z-index: 1; */
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    transform: rotate(-30deg);
+}
+.str{
+    width: 20px;
+    height: 20px;
+}
+.uranus{
+    width: 20px;
+    height: 20px;
+}
+.neptune,.jupiterimg,.mar,.vns,.mer{
+    width: 20px;
+    height: 20px;
+}
+/* .geff{
+    background: url('./images/giphy.gif') 200px 200px;
+z-index: 100;
+} */
