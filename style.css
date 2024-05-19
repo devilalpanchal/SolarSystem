@@ -325,3 +325,9 @@ body {
     background: url('./images/giphy.gif') 200px 200px;
 z-index: 100;
 } */
+
+.upperImges{
+    /* display: none;2 */
+    position: absolute;
+    z-index: 100;
+}
